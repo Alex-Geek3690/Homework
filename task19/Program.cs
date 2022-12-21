@@ -16,7 +16,7 @@ int b = (N / 1000) / 10;
 int c = N % 10;
 int d = (N % 100) % 10;
 
-if (a == c & b == d)
+if (a == c || b == d)
 {
     Console.WriteLine($"{N} -> Да");
 }
