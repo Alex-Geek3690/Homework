@@ -6,21 +6,15 @@
 
 Console.Write("Введите цифру дня недели: ");
 int D = int.Parse(Console.ReadLine()!);
+
 int Sat = 6;
 int Sun = 7;
 
-if (D == Sat)
+if (D == Sat || D == Sun)
 {
     Console.Write($"{D} -> Да");
 }
 else
 {
-    if (D == Sun)
-    {
-        Console.Write($"{D} -> Да");
-    }
-    else
-    {
-        Console.Write($"{D} -> Нет");
-    }
+    Console.Write($"{D} -> Нет");
 }
