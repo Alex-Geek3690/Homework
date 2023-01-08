@@ -5,8 +5,8 @@
 
 int SumRec(int m, int n)
 {
-    if (n == m) return m;
-    else return n + SumRec(m, n - 1);
+    if (n > m) return n > m ? n + SumRec(m, n - 1) : n;
+    else return m > n ? m + SumRec(m - 1, n) : m;
 }
 
 Console.WriteLine("Введите число: ");
