@@ -8,3 +8,4 @@ void NumbersRec(int n)
     if (n > 1) NumbersRec(n - 1);
 }
 NumbersRec(10);
+
